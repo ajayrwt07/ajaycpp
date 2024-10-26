@@ -7,7 +7,7 @@ class SumPositiveNumbers {
     int sum;
 
 public:
-    // Parameterized constructor to initialize array and size
+  
     SumPositiveNumbers(int arr[], int n) {
         size = n;
         this->arr = new int[size];
@@ -21,23 +21,23 @@ public:
         }
     }
 
-    // Copy constructor
+  
     SumPositiveNumbers(const SumPositiveNumbers& obj) {
         size = obj.size;
         arr = new int[size];
-        sum = obj.sum;  // Copy the sum directly
+        sum = obj.sum;  
 
         for (int i = 0; i < size; i++) {
             arr[i] = obj.arr[i];
         }
     }
 
-    // Function to display the sum
+    
     void displaySum() {
         cout << "The sum of all positive numbers is: " << sum << endl;
     }
 
-    // Destructor to free the dynamically allocated memory
+    
     ~SumPositiveNumbers() {
         delete[] arr;
     }
@@ -55,13 +55,10 @@ int main() {
         cin >> arr[i];
     }
 
-    // Creating the original object
     SumPositiveNumbers original(arr, n);
 
-    // Creating a copy of the object using the copy constructor
     SumPositiveNumbers copy = original;
 
-    // Displaying the sum from the copied object
     copy.displaySum();
 
     return 0;
