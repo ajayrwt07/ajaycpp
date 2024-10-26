@@ -5,20 +5,20 @@ class SwapNumbers {
     int a, b;
 
 public:
-    // Parameterized constructor
+   
     SwapNumbers(int x, int y) {
         a = x;
         b = y;
     }
 
-    // Function to swap the numbers
+ 
     void swapValues() {
         int temp = a;
         a = b;
         b = temp;
     }
 
-    // Function to display the numbers
+
     void display() {
         cout << "After swapping: a = " << a << ", b = " << b << endl;
     }
@@ -30,13 +30,14 @@ int main() {
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    // Creating object and passing two numbers to the parameterized constructor
+   
+
     SwapNumbers obj(num1, num2);
 
     cout << "Before swapping: a = " << num1 << ", b = " << num2 << endl;
 
-    // Swapping the numbers
+    
     obj.swapValues();
 
-    // Displaying the swapped values
+  
     obj.di
